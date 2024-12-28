@@ -1,5 +1,1 @@
-{
-  "version": "1.0",
-"url": "http://google.com",
-"info": "amo yazid version 1 by date 28/12/2024"
-}
+{"version":"1.0","url":"http://google.com","info":"amo yazid version 1 by date 28/12/2024"}
