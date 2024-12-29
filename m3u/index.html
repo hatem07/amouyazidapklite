@@ -1,28 +1,45 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MP4 Video Player</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #000;
-        }
-        video {
-            width: 80%;
-            max-width: 800px;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmouYazid TV Tofola - Chaine pour Enfants</title>
+
+<style>
+body {
+  background:black;
+}
+</style> 
+
 </head>
-<body>
-    <video id="videoPlayer" controls autoplay>
-        <source src="http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8" type="video/mp4">
-        Your browser does not support the video element.
+
+<script>
+let pHeight = screen.height;
+let pWidth  = screen.width;
+</script>
+
+
+
+  <link  href="https://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/6.6.3/video.js"></script>
+  <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+  <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+  <center>
+    <video id=amouyazid-video width="1280" height="720" poster="images/amouyazid-appuyer-bouton-003.jpg" class="video-js vjs-default-skin vjs-big-play-centered" data-setup='{"controls": true, "autoplay": true}' >
+
+     <source src="http://mkstream.servehttp.com:1940/AmouYazid/ay1/playlist.m3u8" type="application/x-mpegURL">
+     Your browser does not support HTML5 video.
     </video>
+        <script>
+            var player = videojs('amouyazid-video');
+            player.play();
+        </script>
+    <BR>
+<BR>
+
+
+</FONT>
+  </center>
 </body>
-</html>
